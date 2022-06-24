@@ -1,5 +1,5 @@
 # Top-100-Albums
-This is a simple UICollectionView example with asynchronous image loading using Kingfisher, Alamofire for network requests, and a completly programmatic UI. 
+This is a simple UICollectionView example with asynchronous image loading using Kingfisher, Alamofire for network requests, and a completly programmatic UI. Though Top-100-Albums is a simple 2 screen application, it displays the way swift projects should be structure in a production setting.
 
 # How to run the example?
 1. Clone this repo
@@ -7,7 +7,22 @@ This is a simple UICollectionView example with asynchronous image loading using 
 3. Run `pod install`
 4. Open the xcworkspace file and run the project on a selected device or simulator
 
-# Code features
+# Code Organization
+## /ViewControllers
+- ViewController is a UIViewController class embedded in a NavigationController that holds the UICollectionView for displaying albums.
+- AlbumDetailViewController is also a UIViewController class that is passed `Album` data from ViewController to display a single album.
+
+## /Cells
+- CustomCollectionViewCell is custom UICollectionViewCell class used by ViewController.
+
+## /Models
+The Models folder holds all the neccessary data structures utilized by Top-100-Albums
+- Album is a `Codable` structure that is the most common struct utilized by the app. 
+- Genre is also a `Codable` structure that is utilized by the `Album` struct. 
+- Root and RSSFeed are both `Decodable` structures that are used as helpers to reach the results portion of the Json as show below.
+
+
+# Code Features
 - No force unwrap statements
 - All UI is Auto Layout/programmatic
 - MVVM architecture
