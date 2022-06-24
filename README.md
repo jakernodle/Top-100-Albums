@@ -21,6 +21,35 @@ The Models folder holds all the neccessary data structures utilized by Top-100-A
 - Genre is also a `Codable` structure that is utilized by the `Album` struct. 
 - Root and RSSFeed are both `Decodable` structures that are used as helpers to reach the results portion of the Json as show below.
 
+```Json
+
+{
+  "feed": {
+    ...
+    "results": [
+      {
+        "artistName": "Drake",
+        "name": "Honestly, Nevermind",
+        "releaseDate": "2022-06-17",
+        "artistUrl": "https://music.apple.com/us/artist/drake/271256",
+        "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music122/v4/84/2c/b4/842cb419-243c-b3f4-4da9-b6b980996062/22UMGIM67371.rgb.jpg/100x100bb.jpg",
+        ...
+        "genres": [
+          {
+            "genreId": "17",
+            "name": "Dance",
+            "url": "https://itunes.apple.com/us/genre/id17"
+          },
+          ...
+        ],
+        "url": "https://music.apple.com/us/album/honestly-nevermind/1630230040"
+      }
+    ]
+  }
+}
+
+```
+
 
 # Code Features
 - No force unwrap statements
