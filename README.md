@@ -19,5 +19,5 @@ This is a simple UICollectionView example with asynchronous image loading using 
 - Allows the user to retry the network call if it fails and there isn’t any data in the local database
 
 # Frameworks
-- Alamofire](https://github.com/Alamofire/Alamofire) - An elegant HTTP networking library written in Swift.
-- Kingfisher](https://github.com/onevcat/Kingfisher) - Kingfisher is a powerful, pure-Swift library for downloading and caching images from the web.
+- [Alamofire](https://github.com/Alamofire/Alamofire) - An elegant HTTP networking library written in Swift.
+- [Kingfisher](https://github.com/onevcat/Kingfisher) - Kingfisher is a powerful, pure-Swift library for downloading and caching images from the web.
