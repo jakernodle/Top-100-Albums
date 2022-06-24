@@ -50,6 +50,15 @@ The Models folder holds all the neccessary data structures utilized by Top-100-A
 
 ```
 
+## /Managers + Networking
+In a larger scale application, it would make sense to seperate the managers and networking, however since this application only contains one network request, it seemed overly complicated to seperate the two
+- UserService is the class that implements our `fetchAlbums()` network request. If successfull, the album data is stored to the static `shared` value of our `App` class to be used globally.
+- App is a simple but helpful class for us to store and use our Album data globally.
+
+## /Extensions
+These are both simple extensions to minimize code repetition when creating labels and image views.
+- UILabel + TopAlbums
+- UIImageView + TopAlbums
 
 # Code Features
 - No force unwrap statements
