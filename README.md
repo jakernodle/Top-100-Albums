@@ -1,7 +1,7 @@
 # Top-100-Albums
 This is a simple UICollectionView example with asynchronous image loading using Kingfisher, Alamofire for network requests, and a completly programmatic UI. Though Top-100-Albums is a simple 2 screen application, it displays the way swift projects should be structure in a production setting.
 
-# How to run the example?
+# How to run?
 1. Clone this repo
 2. Open shell window and navigate to project folder
 3. Run `pod install`
