@@ -60,6 +60,9 @@ These are both simple extensions to minimize code repetition when creating label
 - UILabel + TopAlbums
 - UIImageView + TopAlbums
 
+## Constants.swift
+Constants.swift contains a simple struct for constants used throughout the app. In the future I may add more here.
+
 # Code Features
 - No force unwrap statements
 - All UI is Auto Layout/programmatic
